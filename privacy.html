@@ -1,5 +1,59 @@
-FocusTab does not collect, transmit to any remote server, or share any user data. All data you create in the extension — tasks, reminders, notes, timer state, daily focus, name, and theme preferences — is stored only on your device via Chrome's local storage API (chrome.storage.local). Uninstalling the extension removes it.
-FocusTab requests four permissions: storage (to save your data locally), topSites (to show your most-visited sites in Quick Links), alarms (to schedule task reminders), and notifications (to show reminders and timer completion alerts). The extension has no host permissions and cannot read or modify any website you visit.
-The extension does not use analytics, trackers, or remote code. All JavaScript ships inside the extension package; nothing is fetched or evaluated at runtime.
-The new tab page does load two public Google-hosted resources for styling: Google Fonts (fonts.googleapis.com, fonts.gstatic.com) for the UI typeface, and the Google favicon service (www.google.com/s2/favicons) for Quick Links icons. When these resources load, Google may receive standard HTTP request metadata (IP address, User-Agent, Referer) as with any website that uses them. No task content, notes, or user activity is sent to Google or any third party.
-Contact: https://github.com/npbhatter17/focustab-issues/issues
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTab — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      color: #1f2937;
+      background: #fafafa;
+    }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    .subtitle { color: #6b7280; margin-top: 0; font-size: 14px; }
+    h2 { font-size: 18px; margin-top: 28px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 13px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+
+  <h1>FocusTab — Privacy Policy</h1>
+  <p class="subtitle">Last updated: April 20, 2026</p>
+
+  <h2>Data collection</h2>
+  <p>FocusTab does not collect, transmit to any remote server, or share any user data. All data you create in the extension — tasks, reminders, notes, timer state, daily focus, name, and theme preferences — is stored only on your device via Chrome's local storage API (<code>chrome.storage.local</code>). Uninstalling the extension removes it.</p>
+
+  <h2>Permissions</h2>
+  <p>FocusTab requests four permissions:</p>
+  <ul>
+    <li><strong><code>storage</code></strong> — to save your data locally.</li>
+    <li><strong><code>topSites</code></strong> — to show your most-visited sites in Quick Links.</li>
+    <li><strong><code>alarms</code></strong> — to schedule task reminders.</li>
+    <li><strong><code>notifications</code></strong> — to show reminders and timer completion alerts.</li>
+  </ul>
+  <p>The extension has no host permissions and cannot read or modify any website you visit.</p>
+
+  <h2>No analytics, no remote code</h2>
+  <p>The extension does not use analytics, trackers, or remote code. All JavaScript ships inside the extension package; nothing is fetched or evaluated at runtime.</p>
+
+  <h2>Third-party resources</h2>
+  <p>The new tab page does load two public Google-hosted resources for styling: Google Fonts (<code>fonts.googleapis.com</code>, <code>fonts.gstatic.com</code>) for the UI typeface, and the Google favicon service (<code>www.google.com/s2/favicons</code>) for Quick Links icons. When these resources load, Google may receive standard HTTP request metadata (IP address, User-Agent, Referer) as with any website that uses them. No task content, notes, or user activity is sent to Google or any third party.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns: <a href="https://github.com/npbhatter17/focustab-issues/issues">https://github.com/npbhatter17/focustab-issues/issues</a></p>
+
+  <footer>
+    FocusTab is an independent, privacy-first new tab extension.
+  </footer>
+
+</body>
+</html>
